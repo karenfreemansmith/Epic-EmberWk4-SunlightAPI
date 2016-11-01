@@ -1,15 +1,16 @@
-<h1>Congressional Committees</h1>
-<button{{action 'showSubs'}}>Show all subcommittees</button>
+<h1>Congressional Committees<span {{action 'showSubs'}} class="showSubs">click here to show all subcommittees</span></h1>
 <ul>
   {{#each model as |committee|}}
-    <div class="committees">
-      <div class="parent">{{committee-filter committee}}</div>
+
+  <div class="committees">
+    <div class="parent">
+      <strong>{{committee-filter committee}}</strong>
+    </div>
       {{#each model as |subcommittee|}}
         <div class="sub">
-          {{sub-committee subcommittee committee.committee_id}}
+          <p>{{sub-committee subcommittee committee.committee_id}}</p>
         </div>
       {{/each}}
     </div>
-
   {{/each}}
 </ul>

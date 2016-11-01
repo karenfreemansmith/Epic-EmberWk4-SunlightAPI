@@ -1,9 +1,6 @@
 <h1>Legislator Lookup</h1>
 
-<form>
   <div class="form-group">
-    <label for="zip">Zip</label>
-    {{input value=zip id="zip"}}
+    {{input value=zip id="zip" class="form-control" placeholder="enter a zip code"}}
   </div>
   <button class="btn btn-primary" {{action 'zipLookup'}}>Submit</button>
-</form>

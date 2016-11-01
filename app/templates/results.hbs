@@ -1,7 +1,8 @@
 <ul>
   {{#each model as |legislator|}}
-    <li>{{legislator.first_name}} {{legislator.last_name}}
-      <br>Contact: <a href={{legislator.contact_form}}>{{legislator.contact_form}}</a>
-    </li>
+    <div class="well">
+      <h4>{{legislator.first_name}} {{legislator.last_name}}:</h4>
+      <p><a href={{legislator.contact_form}}>{{legislator.contact_form}}</a></p>
+    </div>
   {{/each}}
 </ul>
