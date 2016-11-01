@@ -1,0 +1,13 @@
+.sub {
+  font-style: italic;
+  margin-left: 50px;
+  display: none;
+}
+
+.parent {
+  margin-top: 15px;
+}
+
+.show {
+  display: block;
+}
